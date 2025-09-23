@@ -18,18 +18,18 @@ export function Services() {
   ];
 
   return (
-    <section id="services" className="py-24 bg-gray-900">
-      <div className="container mx-auto px-6">
-        <h2 className="text-5xl font-black text-center mb-16">
+    <section id="services" className="py-12 sm:py-16 md:py-24 bg-gray-900">
+      <div className="container mx-auto px-4 sm:px-6">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-center mb-8 sm:mb-12 md:mb-16 leading-tight">
           WE DON'T JUST CODE.<br />
           <span className="text-orange-400">WE ANNIHILATE PROBLEMS.</span>
         </h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service, index) => (
-            <div key={index} className="bg-black border border-gray-800 p-8 hover:border-orange-400 transition-all duration-300 group">
-              <div className="text-4xl mb-4 text-orange-400">{service.icon}</div>
-              <h3 className="text-2xl font-bold mb-4 group-hover:text-orange-400 transition-colors">{service.title}</h3>
-              <p className="text-gray-400">{service.description}</p>
+            <div key={index} className="bg-black border border-gray-800 p-6 sm:p-8 hover:border-orange-400 transition-all duration-300 group">
+              <div className="text-3xl sm:text-4xl mb-4 text-orange-400">{service.icon}</div>
+              <h3 className="text-xl sm:text-2xl font-bold mb-4 group-hover:text-orange-400 transition-colors">{service.title}</h3>
+              <p className="text-gray-400 text-sm sm:text-base">{service.description}</p>
             </div>
           ))}
         </div>

@@ -15,14 +15,14 @@ export function Hero() {
           High-load applications that crush the competition. Mass market solutions that dominate industries. 
           <span className="text-orange-400 font-semibold"> Your business doesn't just grow — it conquers.</span>
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center px-2">
-          <button className="bg-gradient-to-r from-orange-500 to-red-600 text-black font-black py-3 px-6 sm:py-4 sm:px-12 text-base sm:text-lg hover:from-orange-400 hover:to-red-500 transform hover:scale-105 transition-all duration-200 shadow-lg">
-            UNLEASH YOUR POTENTIAL
-          </button>
-          <button className="border-2 border-orange-400 text-orange-400 font-black py-3 px-6 sm:py-4 sm:px-12 text-base sm:text-lg hover:bg-orange-400 hover:text-black transition-all duration-200">
-            SEE OUR WORK
-          </button>
-        </div>
+        {/*<div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center px-2">*/}
+        {/*  <button className="bg-gradient-to-r from-orange-500 to-red-600 text-black font-black py-3 px-6 sm:py-4 sm:px-12 text-base sm:text-lg hover:from-orange-400 hover:to-red-500 transform hover:scale-105 transition-all duration-200 shadow-lg">*/}
+        {/*    UNLEASH YOUR POTENTIAL*/}
+        {/*  </button>*/}
+        {/*  <button className="border-2 border-orange-400 text-orange-400 font-black py-3 px-6 sm:py-4 sm:px-12 text-base sm:text-lg hover:bg-orange-400 hover:text-black transition-all duration-200">*/}
+        {/*    SEE OUR WORK*/}
+        {/*  </button>*/}
+        {/*</div>*/}
       </div>
     </section>
   );

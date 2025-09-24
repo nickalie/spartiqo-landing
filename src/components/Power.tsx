@@ -2,11 +2,11 @@ export function Power() {
   const metrics = [
     {
       value: "99.99%",
-      title: "UPTIME GUARANTEE",
+      title: "UPTIME",
       description: "Your competition sleeps. Your software never does."
     },
     {
-      value: "10M+",
+      value: "1M+",
       title: "CONCURRENT USERS",
       description: "Built to handle apocalyptic traffic loads."
     },

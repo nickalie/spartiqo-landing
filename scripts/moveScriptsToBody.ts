@@ -17,14 +17,19 @@ export const moveScriptsToBody = () => {
             scripts.push(scriptMatch[0])
             cleanedHead = cleanedHead.replace(scriptMatch[0], '')
           }
-          return `<head>${cleanedHead}</head>`
+          // Remove empty lines from head and ensure proper formatting
+          cleanedHead = cleanedHead.replace(/\n\s*\n/g, '\n').trim()
+          // Normalize indentation to 4 spaces for all head elements
+          cleanedHead = cleanedHead.replace(/^\s*/gm, '    ')
+          return `<head>\n${cleanedHead}\n  </head>`
         })
         
-        // Insert scripts before closing body tag
+        // Insert scripts before closing body tag with same indentation as other body content
         if (scripts.length > 0) {
+          const indentedScripts = scripts.map(script => `    ${script}`)
           modifiedHtml = modifiedHtml.replace(
             /<\/body>/i,
-            `${scripts.join('\n    ')}\n  </body>`
+            `${indentedScripts.join('\n')}\n  </body>`
           )
         }
         

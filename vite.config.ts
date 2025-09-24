@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import preact from '@preact/preset-vite'
 import tailwindcss from '@tailwindcss/vite'
+import { moveScriptsToBody } from './scripts/moveScriptsToBody'
 
 export default defineConfig({
   plugins: [
@@ -11,6 +12,7 @@ export default defineConfig({
       }
     }),
     tailwindcss(),
+    moveScriptsToBody()
   ],
   build: {
     rollupOptions: {
